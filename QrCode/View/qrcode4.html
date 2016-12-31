@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="../Js/jquery-1.11.3.min.js"></script>
+    <script src="../Js/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+</head>
+<body>
+
+    <div id="code"></div>
+    <script>
+        //如果内容中有中文，在生成二维码钱就要把字符串转换成utf-8
+        function toUtf8(str) {
+            var out, i, len, c;
+            out = "";
+            len = str.length;
+            for (i = 0; i < len; i++) {
+                c = str.charCodeAt(i);
+                if ((c >= 0x0001) && (c <= 0x007F)) {
+                    out += str.charAt(i);
+                } else if (c > 0x07FF) {
+                    out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));
+                    out += String.fromCharCode(0x80 | ((c >> 6) & 0x3F));
+                    out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+                } else {
+                    out += String.fromCharCode(0xC0 | ((c >> 6) & 0x1F));
+                    out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+                }
+            }
+            return out;
+        }
+
+//text 属性的值长度不能太长，最大字节数 10208
+//text 字符串太长 微信/支付宝等扫一扫无法识别，微博识别内容更多
+//微博扫一扫：大约200 字以内，微信扫一扫：大约 160字以内，支付宝扫一扫：大约130字符以内
+$('#code').qrcode({
+    text: toUtf8('SignalR 是 ASP.NET 团队正在开发的一个 Microsoft .NET Framework 库和 jQuery 插件，可能包括在以后版本的 ASP.NET 平台中。 它提供了一些前景极为光明的功能，而这些功能正是，并且是越来越多的，当前不曾具有的，'),
+    width: 150,
+    height: 150
+});
+
+    </script>
+</body>
+</html>

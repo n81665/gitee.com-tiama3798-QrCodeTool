@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="../Js/jquery-1.11.3.min.js"></script>
+    <script src="../Js/jquery-qrcode-master/jquery.qrcode.min.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            /*background:url(../Images/100.jpg) no-repeat;*/
+        }
+    </style>
+    <div id="code"></div>
+    <script>
+        //任意字符串 生成二维码
+        //没法带有logo
+        $('#code').qrcode({
+            text: 'http://blog.csdn.net/u011127019',
+            background: 'url(../Images/101.jpg) no-repeat'
+        });
+    </script>
+</body>
+</html>

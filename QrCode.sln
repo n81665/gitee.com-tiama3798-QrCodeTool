@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrCode", "QrCode\QrCode.csproj", "{ABD974B0-6A00-48B8-94C8-BAB60F0A38EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrCode2", "QrCode2\QrCode2.csproj", "{23CA9BE8-C56B-4F9F-96AC-4B217D06BC07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrCode3", "QrCode3\QrCode3.csproj", "{43ECAF37-3623-4C38-8696-3C5D4BCA6152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrCode4", "QrCode4\QrCode4.csproj", "{DB82194E-265D-4013-8050-CE3FA3BAD6FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABD974B0-6A00-48B8-94C8-BAB60F0A38EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD974B0-6A00-48B8-94C8-BAB60F0A38EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD974B0-6A00-48B8-94C8-BAB60F0A38EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD974B0-6A00-48B8-94C8-BAB60F0A38EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23CA9BE8-C56B-4F9F-96AC-4B217D06BC07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23CA9BE8-C56B-4F9F-96AC-4B217D06BC07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23CA9BE8-C56B-4F9F-96AC-4B217D06BC07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23CA9BE8-C56B-4F9F-96AC-4B217D06BC07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43ECAF37-3623-4C38-8696-3C5D4BCA6152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43ECAF37-3623-4C38-8696-3C5D4BCA6152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43ECAF37-3623-4C38-8696-3C5D4BCA6152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43ECAF37-3623-4C38-8696-3C5D4BCA6152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB82194E-265D-4013-8050-CE3FA3BAD6FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB82194E-265D-4013-8050-CE3FA3BAD6FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB82194E-265D-4013-8050-CE3FA3BAD6FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB82194E-265D-4013-8050-CE3FA3BAD6FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
